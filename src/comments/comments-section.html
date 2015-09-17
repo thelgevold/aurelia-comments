@@ -1,0 +1,17 @@
+<template>
+  <require from='./tree-view'></require>
+  <require from="./add-comment"></require>
+
+  <div>
+    <div class="add-comments">
+      <add-comment></add-comment>
+    </div>
+  </div>
+
+  <div>
+    <div>
+      <tree-view comments.bind="comments"></tree-view>
+    </div>
+  </div>
+
+</template>

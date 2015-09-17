@@ -1,0 +1,40 @@
+ul
+{
+  list-style-type: none;
+}
+
+.commentDate{
+  color: #808080;
+  font-size: 12px;
+}
+
+.comment h5{
+  margin-top: 0;
+}
+
+.add-comments{
+  margin-left: 40px;
+}
+
+.commentSection {
+  width: 600px;
+}
+.comment{
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+  max-width: 300px;
+
+  padding: 10px;
+
+  background-color: #fff;
+
+  margin-top: 5px;
+
+  position: relative;
+
+}
+
+.reply-link a{
+  color: #0088cc;
+}

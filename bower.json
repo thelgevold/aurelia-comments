@@ -1,0 +1,20 @@
+{
+  "name": "comments",
+  "version": "0.0.0",
+  "authors": [
+    "Torgeir Helgevold <torgeirh@hotmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "system.js": "~0.18.17",
+    "es6-module-loader": "~0.17.7",
+    "traceur": "~0.0.91"
+  }
+}

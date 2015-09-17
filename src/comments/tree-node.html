@@ -1,0 +1,22 @@
+<template>
+  <require from="./add-comment"></require>
+  <ul>
+    <li>
+      <div class="comment">
+        <div class="commentDate">${created(current.created)}</div>
+        <h5>${current.author}</h5>
+        <div>
+          ${current.text}
+        </div>
+        <div if.bind="!replying" class="reply-link"><a click.trigger="reply()">Reply</a></div>
+
+        <add-comment parent.bind="current" if.bind="replying"></add-comment>
+
+      </div>
+
+      <tree-node repeat.for="node of current.children" current.bind="node"></tree-node>
+
+    </li>
+  </ul>
+
+</template>

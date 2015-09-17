@@ -1,0 +1,18 @@
+<template>
+
+  <div if.bind="!saved">
+    <div class="form-group">
+      <input type="text" class="form-control" value.bind="author" id="inputName" placeholder="Name">
+    </div>
+    <div class="form-group" style="margin-top: 5px;">
+      <textarea maxLength="500" value.bind="commentText" rows="5" class="form-control" id="inputComment" placeholder="Comment - no markup please"></textarea>
+    </div>
+
+    <button type="button" class="btn btn-primary" click.trigger="save()">Save</button>
+  </div>
+
+  <div if.bind="saved" class="alert alert-success">Thanks for your feedback! Your comment will post as soon as I review it</div>
+
+  <div style="margin-top: 10px;" if.bind="error" class="alert alert-danger">${errorMessage}</div>
+
+</template>
